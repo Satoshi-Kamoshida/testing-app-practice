@@ -11,15 +11,23 @@ COACHTECH 教材 Tutorial 10-5「テスト ハンズオン演習」で作成し�
 - Laravel 10.x
 - PHPUnit（テスト）
 - Eloquent / Factory
-  （**他に使ったものがあれば追記してください**）
 
 ## 学んだこと
 
-- （**自分の言葉で2〜3項目書きましょう**）
+- Seederで作ったデータと、テストで使うデータは別物
 -
 -
 
 ## 動作確認
 
-（**どうやって動かして確認するかを記載してください**）
-# testing-app-practice
+- テスト実行：sail artisan test --filter UserTest
+- 期待される出力
+
+```text
+PASS  Tests\Feature\UserTest
+✓ user can be created
+✓ email must be unique
+
+Tests:    2 passed (3 assertions)
+Duration: 0.50s
+```
